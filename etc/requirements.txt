@@ -1,3 +1,7 @@
-gradio==5.36.2
+gradio==5.32.0
+smolagents==1.20.0
+smolagents[toolkit]
+smolagents[transformers]
+smolagents[gradio]
 torch==2.7.1
 transformers==4.53.2
