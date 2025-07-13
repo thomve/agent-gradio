@@ -1,0 +1,7 @@
+name: agent-gradio
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+      - -r requirements.txt

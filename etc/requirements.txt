@@ -1,0 +1,2 @@
+gradio==5.36.2
+transformers==4.53.2
