@@ -1,8 +1,13 @@
-from smolagents import CodeAgent, InferenceClientModel, DuckDuckGoSearchTool
+import os
 
-model = InferenceClientModel()
+from dotenv import load_dotenv
+from smolagents import CodeAgent, TransformersModel, WebSearchTool
+
+load_dotenv()
+
+model = TransformersModel(model_id="Qwen/Qwen2.5-Coder-0.5B-Instruct")
 agent = CodeAgent(
-    tools=[DuckDuckGoSearchTool()],
+    tools=[WebSearchTool()],
     model=model,
 )
 
