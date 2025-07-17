@@ -1,6 +1,6 @@
 import gradio as gr
 
-from run_rl_cartpole_gym import start_training, stop_training, reset_training, get_data
+from cartpole_dqn_model import start_training, stop_training, reset_training, get_data
 
 with gr.Blocks() as demo:
     gr.Markdown("## CartPole DQN Training Visualization")
