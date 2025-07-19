@@ -5,3 +5,5 @@ smolagents[transformers]
 smolagents[gradio]
 torch==2.7.1
 transformers==4.53.2
+gymnasium
+gymnasium[mujoco]
