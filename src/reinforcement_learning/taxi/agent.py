@@ -16,11 +16,9 @@ n_actions = env.action_space.n
 
 alpha = 0.1         # Learning rate
 gamma = 0.99        # Discount factor
-initial_epsilon = 1.
-min_epsilon = 0.05
-decay_rate = 0.995
 n_planning_steps = 10
 n_episodes = 10000
+epsilon = 0.1  # Exploration rate
 
 
 Q = np.zeros((n_states, n_actions))
@@ -36,7 +34,6 @@ def choose_action(state):
 
 for episode in range(n_episodes):
     state = env.reset()[0]
-    epsilon = max(min_epsilon, initial_epsilon * (decay_rate ** episode))  # Exploration rate
     done = False
     while not done:
         action = choose_action(state)
