@@ -9,3 +9,4 @@ gymnasium
 gymnasium[mujoco]
 swig
 gymnasium[box2d]
+gymnasium[atari]
